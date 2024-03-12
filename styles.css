@@ -94,6 +94,10 @@ img{
     justify-content: center
 }
 
+.price{
+    display: flex;
+}
+
 h1{
     font-size: 40px;
     font-weight: 700;
@@ -106,8 +110,11 @@ h2, p{
 }
 
 h2{
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 p{
@@ -122,3 +129,13 @@ p{
     font-weight: 700;
 }
 
+#description{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#original-price{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
