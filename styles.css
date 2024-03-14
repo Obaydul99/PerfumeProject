@@ -64,14 +64,18 @@ body{
 .main-box{
     display: flex;
     justify-content: center;
-    margin: 75px 250px;
+    margin: 75px 0px;
 }
 
-img{
+.perfume-desktop{
     width: 350px;
     height: 525px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.perfume-mobile{
+    display: none;
 }
 
 .write-box{
@@ -91,11 +95,14 @@ img{
 .cart-box{
     background-color: forestgreen;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .price{
     display: flex;
+    margin-bottom: 35px;
 }
 
 h1{
@@ -107,6 +114,7 @@ h1{
 h2, p{
     font-weight: 500;
     font-family: Montserrat;
+    color: gray;
 }
 
 h2{
@@ -127,15 +135,79 @@ p{
 
 #cart{
     font-weight: 700;
+    color: white;
 }
 
 #description{
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 #original-price{
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 10px;
+    text-decoration: line-through;
+}
+
+.icon-cart{
+    margin-right: 10px;
+}
+
+#new-price{
+    color: darkgreen;
+}
+
+@media (max-width: 600px){
+    .perfume-desktop{
+        display: none;
+    }
+    
+    .perfume-mobile{
+        display: block;
+        width: 375px;
+        height: 250px; 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .main-box{
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .write-box{
+        width: 375px;
+        height: 100%;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 16px;
+        letter-spacing: 3.5px;
+    }
+
+    #description{
+        font-size: 15.5px;
+    }
+
+    #original-price{
+        font-size: 14px;
+        justify-content: left;
+    }
+
+    #new-price{
+        font-size: 40px;
+    }
+
+    .price{
+        margin-bottom: 20px;
+    }
 }
